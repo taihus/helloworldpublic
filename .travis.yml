@@ -1,11 +1,9 @@
-language: cpp
+language: java
 sudo: required
 dist: xenial
-compiler:
-- gcc
-os:
-- linux
+jdk: oraclejdk11
+os: linux
 
 script:
-  - sudo chmod u+x buildpointer
-  - ./buildpointer
+  - javac HelloWorld.java
+  - java HelloWorld
